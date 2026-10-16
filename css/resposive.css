@@ -1,0 +1,76 @@
+@charset "utf-8";
+@media (max-width: 768px) {
+  .gnb {
+    display: none;
+  }
+  .hambuger {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* news */
+  .section-wrap ul li {
+    width: calc((100% - 40px) / 2);
+  }
+  .nav-menu,
+  .auth-icons {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  /* 햄버거 메뉴 애니메이션 */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -7px);
+  }
+  .header-container {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  /*공통영역 */
+  section .inner {
+    width: 80%;
+  }
+  /* news */
+  .section-wrap ul li {
+    width: 100%;
+  }
+  .upper{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    gap: 00px;
+  }
+ 
+}
+/* = */
+
+@media (max-width: 768px) {
+  .project {
+    padding: 60px 0;
+  }
+
+  .project h2 {
+    font-size: 26px;
+  }
+
+  .projectSwiper .swiper-slide img {
+    height: 220px;
+  }
+
+  .slide-info {
+    padding: 15px;
+  }
+
+  .projectSwiper .swiper-button-prev,
+  .projectSwiper .swiper-button-next {
+    display: none;
+  }
+}
